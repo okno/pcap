@@ -31,5 +31,5 @@ Output :
 
 It means that my test VPS is on the *149.202.32.0* network with *255.255.254.0* subnet mask on the *eth0* interface(Yes it's on OVH).
 
-If you want to learn more about how this test works, take a look at th strace files in the project.
+If you want to learn more about how this test works, take a look at the [strace](https://raw.githubusercontent.com/okno/pcap/master/okno_dev_list.strace) files in the project.
 
