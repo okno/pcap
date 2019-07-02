@@ -1,0 +1,270 @@
+execve("./okno_dev_list", ["./okno_dev_list"], [/* 20 vars */]) = 0
+brk(NULL)                               = 0x10a7f479650
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=53878, ...}) = 0
+mmap(NULL, 53878, PROT_READ, MAP_PRIVATE, 3, 0) = 0x6a8e35dc8000
+close(3)                                = 0
+open("/usr/lib/x86_64-linux-gnu/libpcap.so.0.8", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=269800, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x6a8e35dd9000
+mmap(NULL, 2365344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x6a8e35970000
+mprotect(0x6a8e359b0000, 2093056, PROT_NONE) = 0
+mmap(0x6a8e35baf000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3f000) = 0x6a8e35baf000
+close(3)                                = 0
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x6a8e355d0000
+mprotect(0x6a8e35765000, 2097152, PROT_NONE) = 0
+mmap(0x6a8e35965000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x6a8e35965000
+mmap(0x6a8e3596b000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x6a8e3596b000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x6a8e35dd7000
+arch_prctl(ARCH_SET_FS, 0x6a8e35dd7700) = 0
+mprotect(0x6a8e35965000, 16384, PROT_READ) = 0
+mprotect(0x6a8e35baf000, 8192, PROT_READ) = 0
+mprotect(0x10a7c102000, 4096, PROT_READ) = 0
+mprotect(0x6a8e35ddb000, 4096, PROT_READ) = 0
+munmap(0x6a8e35dc8000, 53878)           = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, nl_pid=32063, nl_groups=00000000}, [12]) = 0
+sendto(3, {{len=20, type=0x12 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1562104504, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0\7\0\3\0lo\0\0\10\0\r\0\0\0\0\0"...}, {{len=1300, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\1\0\2\0\0\0\2\24\0\0\0\0\0\0\n\0\3\0bond0\0\0\0\10\0\r\0"...}, {{len=1144, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\1\0\3\0\0\0\202\0\0\0\0\0\0\0\v\0\3\0dummy0\0\0\10\0\r\0"...}, {{len=1, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3568
+brk(NULL)                               = 0x10a7f479650
+brk(0x10a7f49a650)                      = 0x10a7f49a650
+brk(0x10a7f49b000)                      = 0x10a7f49b000
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\1\0\4\0\0\0C\20\1\0\0\0\0\0\t\0\3\0eth0\0\0\0\0\10\0\r\0"...}, {{len=1196, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\0\3\5\0\0\0\200\0\0\0\0\0\0\0\n\0\3\0tunl0\0\0\0\10\0\r\0"...}, {{len=1208, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\10\3\6\0\0\0\200\0\0\0\0\0\0\0\t\0\3\0sit0\0\0\0\0\10\0\r\0"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3528
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1260, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\1\3\7\0\0\0\200\0\0\0\0\0\0\0\f\0\3\0ip6tnl0\0\10\0\r\0"...}, {{len=917540, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0\10\0\1\0\0\0\0\0\10\0\2\0"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 1260
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1562104504, pid=32063}, "\0\0\0\0"}, {{len=7, type=0x80 /* NLMSG_??? */, flags=0, seq=0, pid=196620}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(3, {{len=20, type=0x16 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1562104505, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=76, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104505, pid=32063}, "\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1\10\0\2\0\177\0\0\1\7\0\3\0lo\0\0"...}, {{len=88, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104505, pid=32063}, "\2\27\200\0\4\0\0\0\10\0\1\0\225\312 \t\10\0\2\0\225\312 \t\10\0\4\0\225\312!\377"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=65556, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104505, pid=32063}, "\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\24\0\6\0"...}, {{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104505, pid=32063}, "\n@\200\0\4\0\0\0\24\0\1\0 \1A\320\0R\20\0\0\0\0\0\0\0\1\361\24\0\6\0"...}, {{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1562104505, pid=32063}, "\n@\200\375\4\0\0\0\24\0\1\0\376\200\0\0\0\0\0\0\0\0\225\377\376\312 \t\24\0\6\0"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 216
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1562104505, pid=32063}, "\0\0\0\0"}, {{len=1, type=0x14 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 3
+ioctl(3, SIOCETHTOOL, 0x771b63849a50)   = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(3, SIOCGIFHWADDR, {ifr_name="lo", ifr_hwaddr=00:00:00:00:00:00}) = 0
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+bind(3, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("lo"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(3, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+setsockopt(3, SOL_PACKET, PACKET_AUXDATA, [1], 4) = 0
+getsockopt(3, SOL_SOCKET, SO_BPF_EXTENSIONS, [56], [4]) = 0
+getsockopt(3, SOL_PACKET, PACKET_HDRLEN, [48], [4]) = 0
+setsockopt(3, SOL_PACKET, PACKET_VERSION, [2], 4) = 0
+setsockopt(3, SOL_PACKET, PACKET_RESERVE, [4], 4) = 0
+setsockopt(3, SOL_PACKET, PACKET_RX_RING, 0x771b63849a60, 28) = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x6a8e353d0000
+uname({sysname="Linux", nodename="userkernel", ...}) = 0
+setsockopt(3, SOL_PACKET, PACKET_RX_RING, {block_size=0, block_nr=0, frame_size=0, frame_nr=0}, 16) = -1 EINVAL (Invalid argument)
+munmap(0x6a8e353d0000, 2097152)         = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 3
+ioctl(3, SIOCETHTOOL, 0x771b63849a50)   = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(3, SIOCGIFHWADDR, {ifr_name="bond0", ifr_hwaddr=86:bd:69:8c:21:8f}) = 0
+ioctl(3, SIOCBONDINFOQUERY, 0x771b63849770) = 0
+ioctl(3, SIOCGIFINDEX, {ifr_name="bond0", }) = 0
+bind(3, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("bond0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(3, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 3
+ioctl(3, SIOCETHTOOL, 0x771b63849a50)   = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(3, SIOCGIFHWADDR, {ifr_name="dummy0", ifr_hwaddr=22:39:e1:65:14:c2}) = 0
+ioctl(3, SIOCBONDINFOQUERY, 0x771b63849770) = -1 EOPNOTSUPP (Operation not supported)
+ioctl(3, SIOCGIWNAME, 0x771b638497c0)   = -1 EINVAL (Invalid argument)
+ioctl(3, SIOCGIFINDEX, {ifr_name="dummy0", }) = 0
+bind(3, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("dummy0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(3, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 3
+ioctl(3, SIOCETHTOOL, 0x771b63849a50)   = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(3, SIOCGIFHWADDR, {ifr_name="eth0", ifr_hwaddr=02:00:95:ca:20:09}) = 0
+ioctl(3, SIOCBONDINFOQUERY, 0x771b63849770) = -1 EOPNOTSUPP (Operation not supported)
+ioctl(3, SIOCGIWNAME, 0x771b638497c0)   = -1 EINVAL (Invalid argument)
+ioctl(3, SIOCGIFINDEX, {ifr_name="eth0", }) = 0
+bind(3, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("eth0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(3, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+setsockopt(3, SOL_PACKET, PACKET_AUXDATA, [1], 4) = 0
+getsockopt(3, SOL_SOCKET, SO_BPF_EXTENSIONS, [56], [4]) = 0
+getsockopt(3, SOL_PACKET, PACKET_HDRLEN, [48], [4]) = 0
+setsockopt(3, SOL_PACKET, PACKET_VERSION, [2], 4) = 0
+setsockopt(3, SOL_PACKET, PACKET_RESERVE, [4], 4) = 0
+setsockopt(3, SOL_PACKET, PACKET_RX_RING, 0x771b63849a60, 28) = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x6a8e353d0000
+uname({sysname="Linux", nodename="userkernel", ...}) = 0
+setsockopt(3, SOL_PACKET, PACKET_RX_RING, {block_size=0, block_nr=0, frame_size=0, frame_nr=0}, 16) = -1 EINVAL (Invalid argument)
+munmap(0x6a8e353d0000, 2097152)         = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 3
+ioctl(3, SIOCETHTOOL, 0x771b63849a50)   = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(3, SIOCGIFHWADDR, {ifr_name="tunl0", ifr_hwaddr=00:00:00:00:00:00}) = 0
+ioctl(3, SIOCGIFINDEX, {ifr_name="tunl0", }) = 0
+bind(3, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("tunl0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(3, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 3
+ioctl(3, SIOCETHTOOL, 0x771b63849a50)   = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(3, SIOCGIFHWADDR, {ifr_name="sit0", ifr_hwaddr=00:00:00:00:00:00}) = 0
+ioctl(3, SIOCGIFINDEX, {ifr_name="sit0", }) = 0
+bind(3, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("sit0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(3, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 3
+ioctl(3, SIOCETHTOOL, 0x771b63849a50)   = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(3, SIOCGIFHWADDR, {ifr_name="ip6tnl0", ifr_hwaddr=00:00:00:00:00:00}) = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_DGRAM, 768)      = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="ip6tnl0", }) = 0
+bind(3, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("ip6tnl0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(3, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(3)                                = 0
+open("/sys/class/net", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0700, st_size=0, ...}) = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 4
+getdents(3, /* 10 entries */, 32768)    = 288
+lstat("/sys/class/net/lo/ifindex", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+ioctl(4, SIOCGIFFLAGS, {ifr_name="lo", ifr_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING}) = 0
+lstat("/sys/class/net/eth0/ifindex", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+ioctl(4, SIOCGIFFLAGS, {ifr_name="eth0", ifr_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST}) = 0
+lstat("/sys/class/net/sit0/ifindex", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+ioctl(4, SIOCGIFFLAGS, {ifr_name="sit0", ifr_flags=IFF_NOARP}) = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 5
+ioctl(5, SIOCETHTOOL, 0x771b638487d0)   = 0
+close(5)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 5
+ioctl(5, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(5, SIOCGIFHWADDR, {ifr_name="sit0", ifr_hwaddr=00:00:00:00:00:00}) = 0
+ioctl(5, SIOCGIFINDEX, {ifr_name="sit0", }) = 0
+bind(5, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("sit0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(5, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(5)                                = 0
+lstat("/sys/class/net/bond0/ifindex", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+ioctl(4, SIOCGIFFLAGS, {ifr_name="bond0", ifr_flags=IFF_BROADCAST|IFF_MASTER|IFF_MULTICAST}) = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 5
+ioctl(5, SIOCETHTOOL, 0x771b638487d0)   = 0
+close(5)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 5
+ioctl(5, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(5, SIOCGIFHWADDR, {ifr_name="bond0", ifr_hwaddr=86:bd:69:8c:21:8f}) = 0
+ioctl(5, SIOCBONDINFOQUERY, 0x771b638484f0) = 0
+ioctl(5, SIOCGIFINDEX, {ifr_name="bond0", }) = 0
+bind(5, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("bond0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(5, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(5)                                = 0
+lstat("/sys/class/net/tunl0/ifindex", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+ioctl(4, SIOCGIFFLAGS, {ifr_name="tunl0", ifr_flags=IFF_NOARP}) = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 5
+ioctl(5, SIOCETHTOOL, 0x771b638487d0)   = 0
+close(5)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 5
+ioctl(5, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(5, SIOCGIFHWADDR, {ifr_name="tunl0", ifr_hwaddr=00:00:00:00:00:00}) = 0
+ioctl(5, SIOCGIFINDEX, {ifr_name="tunl0", }) = 0
+bind(5, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("tunl0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(5, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(5)                                = 0
+lstat("/sys/class/net/dummy0/ifindex", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+ioctl(4, SIOCGIFFLAGS, {ifr_name="dummy0", ifr_flags=IFF_BROADCAST|IFF_NOARP}) = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 5
+ioctl(5, SIOCETHTOOL, 0x771b638487d0)   = 0
+close(5)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 5
+ioctl(5, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(5, SIOCGIFHWADDR, {ifr_name="dummy0", ifr_hwaddr=22:39:e1:65:14:c2}) = 0
+ioctl(5, SIOCBONDINFOQUERY, 0x771b638484f0) = -1 EOPNOTSUPP (Operation not supported)
+ioctl(5, SIOCGIWNAME, 0x771b63848540)   = -1 EINVAL (Invalid argument)
+ioctl(5, SIOCGIFINDEX, {ifr_name="dummy0", }) = 0
+bind(5, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("dummy0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(5, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(5)                                = 0
+lstat("/sys/class/net/ip6tnl0/ifindex", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+ioctl(4, SIOCGIFFLAGS, {ifr_name="ip6tnl0", ifr_flags=IFF_NOARP}) = 0
+socket(AF_UNIX, SOCK_RAW, 0)            = 5
+ioctl(5, SIOCETHTOOL, 0x771b638487d0)   = 0
+close(5)                                = 0
+socket(AF_PACKET, SOCK_RAW, 768)        = 5
+ioctl(5, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+ioctl(5, SIOCGIFHWADDR, {ifr_name="ip6tnl0", ifr_hwaddr=00:00:00:00:00:00}) = 0
+close(5)                                = 0
+socket(AF_PACKET, SOCK_DGRAM, 768)      = 5
+ioctl(5, SIOCGIFINDEX, {ifr_name="ip6tnl0", }) = 0
+bind(5, {sa_family=AF_PACKET, sll_protocol=htons(ETH_P_ALL), sll_ifindex=if_nametoindex("ip6tnl0"), sll_hatype=ARPHRD_NETROM, sll_pkttype=PACKET_HOST, sll_halen=0}, 20) = 0
+getsockopt(5, SOL_SOCKET, SO_ERROR, [100], [4]) = 0
+close(5)                                = 0
+getdents(3, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+close(3)                                = 0
+socket(AF_PACKET, SOCK_DGRAM, 768)      = 3
+ioctl(3, SIOCGIFINDEX, {ifr_name="lo", }) = 0
+setsockopt(3, SOL_PACKET, PACKET_AUXDATA, [1], 4) = 0
+getsockopt(3, SOL_SOCKET, SO_BPF_EXTENSIONS, [56], [4]) = 0
+getsockopt(3, SOL_PACKET, PACKET_HDRLEN, [48], [4]) = 0
+setsockopt(3, SOL_PACKET, PACKET_VERSION, [2], 4) = 0
+setsockopt(3, SOL_PACKET, PACKET_RESERVE, [4], 4) = 0
+setsockopt(3, SOL_PACKET, PACKET_RX_RING, 0x771b63849b60, 28) = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x6a8e353d0000
+uname({sysname="Linux", nodename="userkernel", ...}) = 0
+setsockopt(3, SOL_PACKET, PACKET_RX_RING, {block_size=0, block_nr=0, frame_size=0, frame_nr=0}, 16) = -1 EINVAL (Invalid argument)
+munmap(0x6a8e353d0000, 2097152)         = 0
+close(3)                                = 0
+socket(AF_BLUETOOTH, SOCK_RAW, 1)       = -1 EAFNOSUPPORT (Address family not supported by protocol)
+open("/sys/bus/usb/devices", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0700, st_size=0, ...}) = 0
+getdents(3, /* 2 entries */, 32768)     = 48
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_NETFILTER) = 3
+close(3)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_NETFILTER) = 3
+sendto(3, {{len=28, type=0x401 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104506, pid=0}, "\2\0\0\0\5\0\1\0\4\6\0\0"}, 28, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 28
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104506, pid=32063}, "\0\0\0\0\34\0\0\0\1\4\5\0\272\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+sendto(3, {{len=28, type=0x401 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104507, pid=0}, "\2\0\0\0\5\0\1\0\3\4\5\0"}, 28, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 28
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104507, pid=32063}, "\0\0\0\0\34\0\0\0\1\4\5\0\273\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+sendto(3, {{len=28, type=0x401 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104508, pid=0}, "\0\0\0\0\5\0\1\0\1\4\5\0"}, 28, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 28
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104508, pid=32063}, "\0\0\0\0\34\0\0\0\1\4\5\0\274\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+sendto(3, {{len=32, type=0x401 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104509, pid=0}, "\0\0\0\0\n\0\2\0\0\0\0D\2\0\33]"}, 32, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 32
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104509, pid=32063}, "\0\0\0\0 \0\0\0\1\4\5\0\275\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+close(3)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_NETFILTER) = 3
+sendto(3, {{len=28, type=0x302 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104510, pid=0}, "\0\0\0\0\10\0\1\0\4\0\0\2"}, 28, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 28
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104510, pid=32063}, "\0\0\0\0\34\0\0\0\2\3\5\0\276\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+sendto(3, {{len=28, type=0x302 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104511, pid=0}, "\0\0\0\0\10\0\1\0\3\0\0\2"}, 28, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 28
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104511, pid=32063}, "\0\0\0\0\34\0\0\0\2\3\5\0\277\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+sendto(3, {{len=28, type=0x302 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104512, pid=0}, "\0\0\0\0\10\0\1\0\1\0\0\0"}, 28, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 28
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104512, pid=32063}, "\0\0\0\0\34\0\0\0\2\3\5\0\300\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+sendto(3, {{len=32, type=0x302 /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK, seq=1562104513, pid=0}, "\0\0\0\0\t\0\2\0\0\0\0D\2\322\33]"}, 32, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 32
+recvfrom(3, {{len=36, type=NLMSG_ERROR, flags=0, seq=1562104513, pid=32063}, "\0\0\0\0 \0\0\0\2\3\5\0\301\322\33]\0\0\0\0"}, 1024, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+close(3)                                = 0
+fstat(1, {st_mode=S_IFREG|0644, st_size=23281, ...}) = 0
+socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 3
+ioctl(3, SIOCGIFADDR, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("149.202.32.9")}}) = 0
+ioctl(3, SIOCGIFNETMASK, {ifr_name="eth0", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.254.0")}}) = 0
+close(3)                                = 0
+write(1, "DEV: eth0\nNET: 149.202.32.0\nMASK"..., 48DEV: eth0
+NET: 149.202.32.0
+MASK: 255.255.254.0
+) = 48
+exit_group(0)                           = ?
++++ exited with 0 +++
