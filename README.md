@@ -25,7 +25,10 @@ Output :
     DEV: eth0
     NET: 149.202.32.0
     MASK: 255.255.254.0
-  
+
+<p align="left">
+<img src="https://raw.githubusercontent.com/okno/pcap/master/okno_dev_list_screenshot.png" /></p>
+
 It means that my test VPS is on the *149.202.32.0* network with *255.255.254.0* subnet mask on the *eth0* interface(Yes it's on OVH).
 
 If you want to learn more about how this test works, take a look at th strace files in the project.
