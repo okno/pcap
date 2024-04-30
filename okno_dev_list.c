@@ -20,7 +20,7 @@ char errbuf[PCAP_ERRBUF_SIZE];
 bpf_u_int32 netp;       /* indirizzo ip */
 bpf_u_int32 maskp;      /* subnet mask */
 struct in_addr addr;
-/* Chiediamo a pcap di trovare un interfaccia */
+/* Chiediamo a pcap di trovare interfaccia */
 dev = pcap_lookupdev(errbuf);
 /* Controllo errore */
 if(dev == NULL)
@@ -30,7 +30,7 @@ if(dev == NULL)
         }
 /* Stampa il nome dell'interfaccia */
 printf("DEV: %s\n",dev);
-/* Chiediamo a php di trvare la rete e la subnet mask dell'interfaccia */
+/* Chiediamo a pcap di trvare la rete e la subnet mask dell'interfaccia */
 ret = pcap_lookupnet(dev,&netp,&maskp,errbuf);
         if(ret == -1)
         {
